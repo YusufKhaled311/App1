@@ -14,9 +14,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
-import { createBrowserRouter, RouterProvider,Navigate,} from "react-router-dom";
+import {  RouterProvider,Navigate, createHashRouter,} from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {path: "/", element: <Navigate to="/startFramework" />},
 
   {
