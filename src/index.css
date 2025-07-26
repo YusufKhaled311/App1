@@ -1,0 +1,147 @@
+:root {
+
+    --primary-color: hsl(210, 29%, 24%);
+    --secondary-color: hsl(168, 76%, 42%);
+    --dark-color: hsl(209, 29%, 14%);
+
+
+    /* ====== Font  size  */
+    --fs-40: 2.5rem;
+    --fs-32: 2rem;
+    --fs-28: 1.75rem;
+    --fs-16: 1rem;
+
+
+    /* ===== font= weight */
+
+    --fw-900: 900;
+    --fw-700: 700;
+    --fw-400: 400;
+    --fw-500: 500;
+
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color) !important;
+}
+
+.dark-bg {
+    background-color: var(--dark-color);
+}
+
+.dark-color {
+    color: var(--dark-color) !important;
+}
+
+.primary-color {
+    color: var(--primary-color) !important;
+}
+
+.fs-40 {
+    font-size: var(--fs-40);
+}
+
+.fs-32 {
+    font-size: var(--fs-32) !important;
+}
+
+.fs-28 {
+    font-size: var(--fs-28) !important;
+}
+
+.fs-16 {
+    font-size: var(--fs-16) !important;
+}
+
+.fw-900 {
+    font-weight: var(--fw-900) !important;
+}
+
+.fw-700 {
+    font-weight: var(--fw-700) !important;
+}
+
+.fw-500 {
+    font-weight: var(--fw-500) !important;
+}
+
+.fw-400 {
+    font-weight: var(--fw-400) !important;
+}
+
+.line-h-48 {
+    line-height: 48px;
+}
+
+
+.star {
+    position: relative;
+
+}
+
+.star::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    transform: translate(30%, -20%);
+    -webkit-transform: translate(30%, -20%);
+    -moz-transform: translate(30%, -20%);
+    -ms-transform: translate(30%, -20%);
+    -o-transform: translate(30%, -20%);
+}
+
+.star::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 80px;
+    height: 4px;
+    background-color: white;
+    transform: translate(-30%, -20%);
+    -webkit-transform: translate(-30%, -20%);
+    -moz-transform: translate(-30%, -20%);
+    -ms-transform: translate(-30%, -20%);
+    -o-transform: translate(-30%, -20%);
+}
+
+.active {
+    background-color: var(--secondary-color) !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.navbar {
+    transition: padding 0.5s ease;
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -ms-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+}
+
+
+@media screen and (max-width:567px) {
+
+
+    :root {
+
+        --fs-40: 2rem;
+        --fs-32: 1.7rem;
+    }
+
+    h2
+    {
+        font-size: 1.6rem !important;
+    }
+}

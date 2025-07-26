@@ -1,0 +1,32 @@
+.dark::after,
+.dark::before {
+    background-color: hsl(210, 29%, 24%) !important;
+}
+
+
+/* Show label when input has content */
+
+
+
+
+label {
+    position: relative;
+    top: 30px;
+    z-index: -1;
+    transition: all 0.5s , z-index 0s ;
+    -webkit-transition: all 0.5s , z-index 0s ;
+    -moz-transition: all 0.5s , z-index 0s ;
+    -ms-transition: all 0.5s , z-index 0s ;
+    -o-transition: all 0.5s , z-index 0s ;
+}
+
+.active {
+
+    top: -10px;
+    z-index: 10;
+    font-size: 1rem;
+    color: hsl(168, 76%, 42%);
+    
+ 
+}
+

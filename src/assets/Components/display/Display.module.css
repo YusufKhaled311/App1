@@ -1,0 +1,38 @@
+.portfolio_image
+{
+    cursor: pointer;
+}
+.layer 
+{
+    position: absolute;
+    top:0px ;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1000;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    i
+    {
+         opacity : 0;
+        transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+
+        font-size: 70px;
+}
+}
+
+.portfolio_image:hover .layer
+{
+     background-color: rgba(26, 186, 159,0.76);
+     i
+     {
+        opacity: 1;
+     }
+}
